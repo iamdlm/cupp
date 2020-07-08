@@ -1,6 +1,4 @@
 # CUPP - Common User Passwords Profiler
-
-## About
 Inspired by  [Mebus / cupp](https://github.com/Mebus/cupp).
 
 ## Usage
