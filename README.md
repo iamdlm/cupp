@@ -16,3 +16,4 @@ Requires three files:
 ## ✔️ Done
 
 ## 🎀 Nice to have
+- Include file with most used passwords (parameter)
