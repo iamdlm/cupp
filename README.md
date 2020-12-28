@@ -8,8 +8,8 @@ Requires three files:
 - `chars.txt` contains special characters such as underscore, at sign, etc.
 
 ## ⚙️ To do
-[ ] Questions for profiling (name, age, address, partner, nickname, etc.) 
-[ ] Parameters (min length, max length, numeric only, alphanumeric, etc.)
+- [ ] Questions for profiling (name, age, address, partner, nickname, etc.) 
+- [ ] Parameters (min length, max length, numeric only, alphanumeric, etc.)
 
 ## 🎀 Nice to have
 - Include file with most used passwords (parameter)
