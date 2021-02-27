@@ -11,10 +11,15 @@ Requires three files:
 > CUPP.exe [args]
 
 Args:
+- [0], --min length
+- [0], --max length
 - i, --invert passwords (split at special char)
 - s, --include special char
 - c, --include first-letter capitalization 
 - n, --include numbers
+
+Example:
+> CUPP.exe 6 20 s n
 ```
 
 ## To do
