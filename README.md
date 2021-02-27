@@ -12,7 +12,7 @@ Requires three files:
 
 Args:
 - [0], --min length
-- [0], --max length
+- [1], --max length
 - i, --invert passwords (split at special char)
 - s, --include special char
 - c, --include first-letter capitalization 
