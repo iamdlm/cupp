@@ -23,7 +23,6 @@ Example:
 ```
 
 ## To do
-- [ ] Questions for profiling (name, age, address, partner, nickname, etc.) 
 - [x] Parameters (min length, max length, numeric only, alphanumeric, etc.)
 - [ ] Include file with most used passwords (parameter)
 - [ ] Optimize algorithm with special chars at start/end of string, etc
