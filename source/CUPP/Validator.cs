@@ -8,12 +8,26 @@ namespace CUPP
 {
     class Validator
     {
-        private static readonly int MinLength = 8;
-        private static readonly int MaxLength = 16;
         private static readonly char[] SpecialChars = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~".ToCharArray();
 
         public static bool Validate(string[] args, string password)
         {
+            // set min and max length
+
+            int minLength = 8, maxLength = 16;
+
+            try
+            {
+                minLength = Convert.ToInt32(args[0]);
+            }
+            catch { }
+
+            try
+            {
+                maxLength = Convert.ToInt32(args[1]);
+            }
+            catch { }
+
             // value for minimal checks required in the last position of the array
 
             int minChecksRequired = IsDigitsOnly(args[args.Length - 1]) ? Convert.ToInt32(args[args.Length - 1]) : 0;
@@ -21,9 +35,9 @@ namespace CUPP
 
             // validate length
             
-            if (MaxLength == 0)
+            if (maxLength == 0)
                 minChecksVerified++;
-            else if (password.Length > MinLength && password.Length <= MaxLength)
+            else if (password.Length > minLength && password.Length <= maxLength)
                 minChecksVerified++;
 
             // validate only numbers
