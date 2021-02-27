@@ -30,6 +30,7 @@ namespace CUPP
                             if (Validator.Validate(args, combo1)) { passwords.Add(combo1); }
 
                             // s - special chars
+
                             if (args.Contains("s"))
                             {
                                 string combo2 = $"{fstWord}{specialChar}{sndWord}";
@@ -38,6 +39,7 @@ namespace CUPP
                             }
 
                             // n - numbers
+
                             if (args.Contains("n"))
                             {
                                 foreach (string number in numbers)
@@ -46,6 +48,7 @@ namespace CUPP
                                     if (Validator.Validate(args, combo3)) { passwords.Add(combo3); }
 
                                     // s - special chars
+
                                     if (args.Contains("s"))
                                     {
                                         string combo4 = $"{fstWord}{specialChar}{sndWord}{number}";
@@ -67,12 +70,14 @@ namespace CUPP
             foreach (string password in passwords)
             {
                 // c - capitalization
+
                 if (args.Contains("c") && char.IsLetter(password[0]))
                 {
                     passwordsCapital.Add(Helper.FirstCharToUpper(password));
                 }
 
                 // s - special chars
+
                 if (args.Contains("i") && args.Contains("s"))
                 {
                     foreach (string specialChar in chars)
@@ -93,8 +98,6 @@ namespace CUPP
                 passwords.AddRange(passwordsCapital);
 
             File.WriteAllLines("passwords.txt", passwords);
-        }
-
-        
+        }        
     }
 }

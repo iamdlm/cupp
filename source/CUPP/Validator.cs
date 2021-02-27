@@ -15,29 +15,35 @@ namespace CUPP
         public static bool Validate(string[] args, string password)
         {
             // value for minimal checks required in the last position of the array
+
             int minChecksRequired = IsDigitsOnly(args[args.Length - 1]) ? Convert.ToInt32(args[args.Length - 1]) : 0;
             int minChecksVerified = 0;
 
             // validate length
+            
             if (MaxLength == 0)
                 minChecksVerified++;
             else if (password.Length > MinLength && password.Length <= MaxLength)
                 minChecksVerified++;
 
             // validate only numbers
+            
             if (!IsDigitsOnly(password))
                 minChecksVerified++;
 
             // validate only letters
+            
             if (!IsLettersOnly(password))
                 minChecksVerified++;
 
             // validate upper case letter(s)
+            
             if (args.Contains("c"))
                 if (!password.Equals(password.ToLower()))
                     minChecksVerified++;
 
             // validate special char(s)
+            
             if (args.Contains("s"))
                 if (ContainsSpecialChar(password))
                     minChecksVerified++;
