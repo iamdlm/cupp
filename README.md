@@ -27,3 +27,4 @@ Example:
 - [x] Parameters (min length, max length, numeric only, alphanumeric, etc.)
 - [ ] Include file with most used passwords (parameter)
 - [ ] Optimize algorithm with special chars at start/end of string, etc
+- [ ] Add tests
