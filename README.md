@@ -7,11 +7,7 @@ Requires three files:
 - `numbers.txt` contains numbers such as day/month/year of birth, favorite number, etc.
 - `chars.txt` contains special characters such as underscore, at sign, etc.
 
-## ⚙️ To do
-- Questions for profiling (name, age, address, partner, nickname, etc.) 
-- Parameters (min length, max length, numeric only, alphanumeric, etc.)
-
-## ✔️ Done
-
-## 🎀 Nice to have
-- Include file with most used passwords (parameter)
+## To do
+- [ ] Questions for profiling (name, age, address, partner, nickname, etc.) 
+- [ ] Parameters (min length, max length, numeric only, alphanumeric, etc.)
+- [ ] Include file with most used passwords (parameter)
