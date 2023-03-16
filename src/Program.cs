@@ -73,7 +73,7 @@ namespace CUPP
 
                 if (args.Contains("c") && char.IsLetter(password[0]))
                 {
-                    passwordsCapital.Add(Helper.FirstCharToUpper(password));
+                    passwordsCapital.Add(password.FirstCharToUpper());
                 }
 
                 // s - special chars
